@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+.goto-pimery-shade{
+  background-color: #cc0000b8 !important;
+}
+.mdb-color.lighten-3 {
+  background-color: #c71400b3 !important;
+}
+body {
+  // background-color: rgba(6, 5, 5, 0.57);
+  background-image: linear-gradient(rgba(199, 20, 0, 0.52), #21252921), url(/assets/gotocycle_bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.color-gradient {
+  // background-color: rgba(6, 5, 5, 0.57);
+  background-image: linear-gradient(rgba(199, 20, 0, 0.52), #21252921);
+  color: #fff;
+}
+
+
+.md-form input[type=text]:focus:not([readonly]),
+.md-form input[type=password]:focus:not([readonly]),
+.md-form input[type=email]:focus:not([readonly]),
+.md-form input[type=url]:focus:not([readonly]),
+.md-form input[type=time]:focus:not([readonly]),
+.md-form input[type=date]:focus:not([readonly]),
+.md-form input[type=datetime-local]:focus:not([readonly]),
+.md-form input[type=tel]:focus:not([readonly]),
+.md-form input[type=number]:focus:not([readonly]),
+.md-form input[type=search-md]:focus:not([readonly]),
+.md-form input[type=search]:focus:not([readonly]),
+.md-form textarea.md-textarea:focus:not([readonly]) {
+  box-shadow: 0 1px 0 0 #d1282d;
+  border-bottom: 1px solid #d1282d;
+}

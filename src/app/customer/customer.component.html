@@ -1,0 +1,210 @@
+<!-- Material form contact -->
+<div class="container">
+
+    <div class="center">
+
+        <div class="card">
+
+          <h5 class="card-header  white-text text-center py-4">
+            <strong>Register</strong>
+          </h5>
+
+          <!--Card content-->
+          <div class="card-body px-lg-5 pt-0">
+
+            <!-- Form -->
+            <form [formGroup]="this.customerService.form" (ngSubmit)="onSubmit()">
+              <input type="hidden" formControlName="$key">
+
+              <!-- Name -->
+              <div class="md-form mt-3">
+                <input formControlName="fullName" type="text" class="form-control" id="materialContactFormName"
+                  [ngClass]="{'is-invalid':submitted && formControls.fullName.errors}">
+                <label for="materialContactFormName">Full Name</label>
+                <div class="invalid-feedback" *ngIf="submitted && formControls.fullName.errors">
+                  This field is required.</div>
+                <!-- <input type="text" id="materialContactFormName" class="form-control">
+              <label for="materialContactFormName">Name</label> -->
+              </div>
+
+              <!-- E-mail -->
+              <div class="md-form">
+                <input id="materialContactFormEmail" formControlName="email" type="email" class="form-control"
+                  [ngClass]="{'is-invalid':submitted && formControls.email.errors}">
+                <label for="materialContactFormEmail">E-mail</label>
+
+                <div class="invalid-feedback" *ngIf="submitted && formControls.email.errors">
+                  Invalid email address.</div>
+                <!-- <input type="email" id="materialContactFormEmail" class="form-control"> -->
+              </div>
+
+              <!-- mobile -->
+              <div class="md-form">
+                <input id="materialContactFormMobile" type="text" formControlName="mobile" class="form-control"
+                  [ngClass]="{'is-invalid':submitted && formControls.mobile.errors}">
+                <label for="materialContactFormMobile">Mobile</label>
+                <div class="invalid-feedback" *ngIf="submitted && formControls.mobile.errors">
+                  <label *ngIf="formControls.mobile.errors.required">This field is required.</label>
+                  <label *ngIf="formControls.mobile.errors.minlength">Atleast 8 numbers.</label>
+                </div>
+              </div>
+
+              <div class="md-form">
+                <label for="materialContactFormMobile">workspace</label>
+                <input type='text' id="materialContactFormMobile" formControlName="workspace" class="form-control">
+              </div>
+
+              <!-- Workspace -->
+              <!-- <span>Subject</span>
+            <select class="mdb-select">
+              <option value="" disabled>Choose option</option>
+              <option value="1" selected>Feedback</option>
+              <option value="2">Report a bug</option>
+              <option value="3">Feature request</option>
+              <option value="4">Feature request</option>
+            </select> -->
+
+
+              <div class="md-form">
+                <label>cardno</label>
+                <input type='text' formControlName="cardno" class="form-control">
+              </div>
+
+              <div class="md-form">
+                <label>companyname</label>
+                <input type='text' formControlName="companyname" class="form-control">
+              </div>
+
+              <!-- </form> -->
+              <!--Message-->
+              <!-- <div class="md-form">
+              <textarea id="materialContactFormMessage" class="form-control md-textarea" rows="3"></textarea>
+              <label for="materialContactFormMessage">Message</label>
+            </div> -->
+
+              <!-- Copy -->
+              <!-- <button type="button" class="btn btn-primary" >
+                Launch demo modal
+              </button> -->
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="materialContactFormCopy">
+                <label data-toggle="modal" data-target="#exampleModalCenter" class="form-check-label"
+                  for="materialContactFormCopy1">Send me a copy of this message</label>
+              </div>
+
+              <!-- Send button -->
+              <button class="btn btn-white btn-rounded btn-block z-depth-0 my-4 waves-effect waves-light">Send
+                </button>
+              <!-- <button class="btn white btn-outline-white btn-rounded btn-block z-depth-0 my-4 waves-effect"
+                type="submit">Send</button> -->
+
+            </form>
+            <!-- Form -->
+
+          </div>
+
+        </div>
+        <!-- Material form contact -->
+
+      </div>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-notify modal-danger " role="document">
+          <div class="modal-content">
+            <div class="modal-header modal-notify modal-danger">
+              <h5 class="heading lead " id="exampleModalLabel">Terms and conditions</h5>
+              <button type="button" class="white-text close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>
+                  </div>
+              <p>
+                  I strongly recommend not doing that. For one you are adding unnecessary markup (the container), unless you do have a natural wrapper.
+
+                  You also will likely want to reset all text alignment inside the child element, otherwise you end up when centred text everywhere.
+
+                  And once you do that, no child element will be centred anymore.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger waves-effect waves-light" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- <div class="row">
+        <div class="col-md-5">
+
+          <form [formGroup]="this.customerService.form" (ngSubmit)="onSubmit()">
+
+            <input type="hidden" formControlName="$key">
+
+            <div class="form-group">
+              <label>Full Name</label>
+              <input formControlName="fullName" class="form-control"
+                [ngClass]="{'is-invalid':submitted && formControls.fullName.errors}">
+              <div class="invalid-feedback" *ngIf="submitted && formControls.fullName.errors">
+                This field is required.</div>
+            </div>
+
+            <div class="form-group">
+              <label>Email</label>
+              <input formControlName="email" class="form-control"
+                [ngClass]="{'is-invalid':submitted && formControls.email.errors}">
+              <div class="invalid-feedback" *ngIf="submitted && formControls.email.errors">
+                Invalid email address.</div>
+            </div>
+
+            <div class="form-group">
+              <label>Mobile</label>
+              <input formControlName="mobile" class="form-control"
+                [ngClass]="{'is-invalid':submitted && formControls.mobile.errors}">
+              <div class="invalid-feedback" *ngIf="submitted && formControls.mobile.errors">
+                <label *ngIf="formControls.mobile.errors.required">This field is required.</label>
+                <label *ngIf="formControls.mobile.errors.minlength">Atleast 8 numbers.</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>workspace</label>
+              <input formControlName="workspace" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label>cardno</label>
+              <input formControlName="cardno" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label>companyname</label>
+              <input formControlName="companyname" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary" value="Submit">
+            </div>
+          </form>
+          <div class="alert alert-info" *ngIf="showSuccessMessage">
+            Submitted You will be contacted by admin soon.
+          </div>
+        </div>
+        <div class="col-md-7">
+          <app-customer-list></app-customer-list>
+        </div>
+      </div> -->
+      <!-- <app-customer-list></app-customer-list> -->
+      <!-- Button trigger modal -->
+
+</div>

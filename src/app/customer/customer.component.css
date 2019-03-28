@@ -1,0 +1,31 @@
+.card {
+  /* background-color: #cc00004a!important; */
+  background-color: rgba(0, 0, 0, 0.72) !important;
+  background-image: linear-gradient(rgba(199, 20, 0, 0.52), #21252921);
+  color: #fff;
+  min-width: 300px;
+  max-width: 510px;
+
+}
+
+
+.btn.btn-block {
+  color: #cc0000;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.center {
+  width: 500px;
+  /*can be in percentage also.*/
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    /* min-height:350px; */
+    height: 100%;
+  }
+}
