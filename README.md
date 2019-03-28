@@ -4,8 +4,8 @@ Structure build for demmy demo.
 # Material bootstrap
 for styling
 
-#angular6
+# angular6
 components and services
 
-#firebase
-crud
+# firebase
+crud operations
