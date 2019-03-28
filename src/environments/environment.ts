@@ -5,12 +5,7 @@
 export const environment = {
   production: false,
   firebaseConfig : {
-    apiKey: "AIzaSyC0geDVfmM69UXEwJP7vyq65lSABqs8yrU",
-    authDomain: "goto-cycle.firebaseapp.com",
-    databaseURL: "https://goto-cycle.firebaseio.com",
-    projectId: "goto-cycle",
-    storageBucket: "goto-cycle.appspot.com",
-    messagingSenderId: "881899024018"
+
   }
 };
 
