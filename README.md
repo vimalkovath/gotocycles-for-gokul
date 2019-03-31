@@ -1,4 +1,4 @@
-# https://goto-the-change.firebaseapp.com/home
+# https://goto-the-change.firebaseapp.com
 
 # gotocycles Demmy pages
 Structure build for demmy demo. 
