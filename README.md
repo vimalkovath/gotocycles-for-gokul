@@ -1,3 +1,5 @@
+# https://goto-the-change.firebaseapp.com/home
+
 # gotocycles Demmy pages
 Structure build for demmy demo. 
 
@@ -9,3 +11,4 @@ components and services
 
 # firebase
 crud operations
+
