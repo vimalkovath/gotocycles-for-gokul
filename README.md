@@ -14,7 +14,7 @@ components and services
 # firebase
 crud operations
 
-# deply
+# deploy
 firebase project creation
 ## Install Firebase tools:
 $ npm install -g firebase-tools
@@ -22,3 +22,6 @@ $ npm install -g firebase-tools
 ## $ firebase init
 ## $ firebase deploy
 ## $ firebase serve for local test 
+
+# custom Domain name
+## https://console.firebase.google.com/u/0/project/goto-the-change/hosting/main
