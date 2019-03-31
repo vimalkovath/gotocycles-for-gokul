@@ -10,6 +10,7 @@ for styling
 
 # angular6
 components and services
+ng build will take build of your project to dist/appname
 
 # firebase
 crud operations
@@ -20,6 +21,7 @@ firebase project creation
 $ npm install -g firebase-tools
 ## $ firebase login
 ## $ firebase init
+ map to your dist/appname default it will be public in that case you have to copy all your files to public or change your build folder to public in angular.json
 ## $ firebase deploy
 ## $ firebase serve for local test 
 
